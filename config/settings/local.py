@@ -11,7 +11,7 @@ SECRET_KEY = env(
     default="Kg6oH7PIXUFJh3bf2N83STcvVeCLp6zh1NGy8y0iyl4bUVFAfqEE3pvt5ksnudAO",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["shop-app-n2c3.onrender.com","localhost", "0.0.0.0", "127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 
 # CACHES
 # ------------------------------------------------------------------------------
