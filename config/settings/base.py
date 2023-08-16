@@ -45,8 +45,8 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {"default": env.db("DATABASE_URL",
-                               default = "postgres://postgres:asif@7275@localhost:5433/myshopapp")}
-                            #    default = "postgres://myshopdatabase_user:M5bogAnBaddCGgkaCKBMjrk49kgElCei@dpg-cjad0b6e546c73893et0-a.oregon-postgres.render.com/myshopdatabase")}
+                            #    default = "postgres://postgres:asif@7275@localhost:5433/myshopapp")}
+                               default = "postgres://myshopdatabase_user:M5bogAnBaddCGgkaCKBMjrk49kgElCei@dpg-cjad0b6e546c73893et0-a.oregon-postgres.render.com/myshopdatabase")}
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 # https://docs.djangoproject.com/en/stable/ref/settings/#std:setting-DEFAULT_AUTO_FIELD
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
