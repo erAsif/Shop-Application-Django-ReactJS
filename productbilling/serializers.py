@@ -12,7 +12,7 @@ class InvoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = InvoiceModel
         fields = '__all__'
-        extra_kwargs = {'total_sell':{'read_only':True}}
+        extra_kwargs = {'total_purchage':{'read_only':True}}
 
 class FinancialSerializer(serializers.ModelSerializer):
     class Meta:
