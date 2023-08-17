@@ -5,7 +5,7 @@ from inventorymanagement.serializers import CategorySerializer,InventorySerializ
 class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
         model = PaymentModel
-        fields = ['amount_pay','paymentmethod','paymentstetus','created_at','invoice']
+        fields = '__all__'
 
 class InvoiceSerializer(serializers.ModelSerializer):
     payment_data = PaymentSerializer(many=True,read_only=True)
